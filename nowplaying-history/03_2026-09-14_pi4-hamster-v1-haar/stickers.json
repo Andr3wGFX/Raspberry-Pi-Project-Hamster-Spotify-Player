@@ -1,0 +1,191 @@
+{
+ "note": "eye_left/eye_right are pixel coords of the hamster's eyes; expr is which face it gets shown for",
+ "stickers": [
+  {
+   "file": "2 arms out .jpg",
+   "eye_left": [
+    323,
+    314
+   ],
+   "eye_right": [
+    412,
+    314
+   ],
+   "expr": "open"
+  },
+  {
+   "file": "bicep.jpg",
+   "eye_left": [
+    390,
+    292
+   ],
+   "eye_right": [
+    530,
+    292
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "cinamoroll ham.jpg",
+   "eye_left": [
+    265,
+    299
+   ],
+   "eye_right": [
+    441,
+    299
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "cross arms .jpg",
+   "eye_left": [
+    503,
+    457
+   ],
+   "eye_right": [
+    725,
+    457
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "discord mod.jpg",
+   "eye_left": [
+    368,
+    302
+   ],
+   "eye_right": [
+    515,
+    302
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "happylollypop.webp",
+   "eye_left": [
+    253,
+    265
+   ],
+   "eye_right": [
+    389,
+    265
+   ],
+   "expr": "open"
+  },
+  {
+   "file": "hewo pwincess.jpg",
+   "eye_left": [
+    390,
+    286
+   ],
+   "eye_right": [
+    514,
+    286
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "look down side .jpg",
+   "eye_left": [
+    439,
+    265
+   ],
+   "eye_right": [
+    549,
+    259
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "nerd.jpg",
+   "eye_left": [
+    258,
+    292
+   ],
+   "eye_right": [
+    420,
+    292
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "one finger mouth .jpg",
+   "eye_left": [
+    166,
+    125
+   ],
+   "eye_right": [
+    221,
+    128
+   ],
+   "expr": "open"
+  },
+  {
+   "file": "plushie.jpg",
+   "eye_left": [
+    294,
+    113
+   ],
+   "eye_right": [
+    419,
+    113
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "pokerham.jpg",
+   "eye_left": [
+    294,
+    318
+   ],
+   "eye_right": [
+    426,
+    318
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "think .jpg",
+   "eye_left": [
+    309,
+    304
+   ],
+   "eye_right": [
+    412,
+    304
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "thumb.jpg",
+   "eye_left": [
+    375,
+    298
+   ],
+   "eye_right": [
+    507,
+    298
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "thumbs down.jpg",
+   "eye_left": [
+    368,
+    299
+   ],
+   "eye_right": [
+    507,
+    299
+   ],
+   "expr": "neutral"
+  }
+ ],
+ "thresholds_measured_on": {
+  "lift_neutral": -0.047,
+  "lift_smile": 0.06,
+  "open_neutral": 0.026,
+  "open_wide": 0.343
+ }
+}
