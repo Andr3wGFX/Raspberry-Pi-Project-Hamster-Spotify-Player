@@ -35,6 +35,10 @@ This project is definitely what I'd classify as a side quest that I return to on
 
 I also love how this project has put a smile on others, whether it be friends, family, or even strangers that see it in passing. That's why I've been working on a version that I can release in a public repo and post it for others to build themselves, perhaps also one that can be run on cheaper hardware. So far, I've made a version of this available to my friends to their great amusement, and I hope to expand that. :D
 
+<p>$\color{magenta}\text{\bf Current Schematic:}$</p>
+<img width="5040" height="2835" alt="Pi Photo Booth" src="https://github.com/user-attachments/assets/f2205a50-2a3f-432b-af3d-7ba0675366bb" />
+
+
 <p>$\color{firebrick}\text{\bf Build Log:}$</p>
 
 I reconstructed my build process in this read me file using my original notes from my build process. It has everything from what I did, how I was inspired by others, what parts I struggled with, and details of what changes I made as time went on to improve it.
