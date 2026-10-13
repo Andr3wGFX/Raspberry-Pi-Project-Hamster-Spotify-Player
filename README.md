@@ -8,7 +8,7 @@
 
   This took the better part of a month to make, and was something I did on the side for fun with leftover parts that my Beaver Works Summer Institute instructor gave me (Thanks for the lessons and the Pis :)). I can't count the total amount of hours I'd spent on this, but I'd guess something around 30 total or so, most of which was working on the code.
 
-  This side project currently runs on a Raspberry Pi 5, which connects to my home internet and uses it to access my Spotify feed. It's attached to a whiteboard that I've placed facing me on my desk so I can take notes and see what I'm playing at the same time. I also added the internals from an old webcam on top, which can take pictures of me, and through a Google Drive connection, I can upload photos directly to my drive. I installed a MediaPipe expression recognition algorithm on the Pi, which allowed me to match Hamster meme pictures to expressions and put them on top of faces live on the screen. I also have a timelapse feature that takes 30-minute timelapses, which helps keep me accountable while doing work and incentivizes me to take a quick break every 30 minutes (and helped me see how bad my posture while working was).
+  This side project currently runs on a Raspberry Pi 5, which connects to my home internet and uses it to access my Spotify feed. It's attached to a whiteboard that I've placed facing me on my desk so I can take notes and see what I'm playing at the same time. I also added the internals from an old webcam on top, which can take pictures of me, and through a Google Drive connection, I can upload photos directly to my drive. I installed a MediaPipe expression recognition algorithm on the Pi, which allowed me to match Hamster meme pictures to expressions and put them on top of faces live on the screen. I also have a timelapse feature that takes 30-minute timelapses, which helps keep me accountable while doing work and incentivizes me to take a quick break every 30 minutes (and helped me see how bad my posture while working was- yes, Mom, you were right; you can say "I told you so.").
 
 Here's how it looks, and where it is on my desk:
 <img width="1388" height="925" alt="image" src="https://github.com/user-attachments/assets/844c2840-6af1-48b0-bf77-a4bfc34a1b22" />
@@ -83,7 +83,7 @@ Wiring at this stage (Don't mind the mess)
 <img width="1388" height="925" alt="image" src="https://github.com/user-attachments/assets/19fd51f0-f498-4aeb-a1d7-f9ea7f7c61d6" />
 
 
-<p>$\color{cyan}\text{\bf September 14th}$</p>
+<p>$\color{cyan}\text{\bf September 14th - 16th}$</p>
 
   On this day, I decided that a simple camera wasn't enough. My friends always texted using these funny hamster memes (pictured below), and I wanted to make them a surprise. I'd seen a video by Catherine (an online creator) that used MediaPipe's expression system to match a hamster meme to a person's face based on their expression. I used her app as a reference for how I could try to do it myself, but ended up not being able to use MediaPipe on my Pi 4 because its processor doesn't have the instruction set that MediaPipe needs to run. So I ended up creating something new that used older OpenCV face detection with three detectable moods using 68 facial tracking points. It wasn't as accurate as her version for the facial expressions, but it did allow me to run it on my existing hardware. I also expanded on what she'd made by making an OpenCV filter find the eyes of the person, measure the distance between them, and then track their face live using the camera and tacking on a hamster sticker, scaled with their eye distance. I also made it work for as many people as could fit in frame by making a system for handling multiple faces, which her version lacked.
 
@@ -92,15 +92,13 @@ Wiring at this stage (Don't mind the mess)
 
 _Problems and how I fixed them at this stage:_ 
 - My face filter ended up updating slowly, which turned out to be an issue with how I processed my expressions every few frames. I fixed this by running the tracking system more often than the expression tracker to save compute and still have it look fast.
-- Blinks were hard to detect using the OpenCV legacy system since it just didn't have enough blendshapes to detect it. This was fixed later on when I switched to MediaPipe.
+- Blinks were hard to detect using the OpenCV legacy system since it just didn't have enough blendshapes to detect them. This was fixed later on when I switched to MediaPipe.
 - MediaPipe, which was the faster and more comprehensive model, crashed on my Pi 4 since it didn't have the necessary instruction sets for it. I ended up fixing this later on by switching to a Pi 5.
 - The expression detection was often wrong, for example, giving happy faces when I was making a neutral expression. I ended up fixing this by calibrating the system with values from my own face, which I got by making funny faces at the camera for a few minutes.
 
-<p>$\color{cyan}\text{\bf September 14th}$</p>
+  I also switched to a Pi 5 since I wasn't happy with how the expressions looked on the Pi 4. The swap, including reflash and rewire, took approximately 2  hours. The hamster filter was rewritten on MediaPipe with 478 face points and 52 expression scores! :D This meant that blinking, head turning, looking down, and a few other moods were possible. This made my expressions more accurate and faster since it was a Pi 5.
 
-  In the evening, I decided to switch to a Pi 5 since I wasn't happy with how the expressions looked on the Pi 4. The swap, including reflash and rewire, took approximately 2  hours. The hamster filter was rewritten on MediaPipe with 478 face points and 52 expression scores! :D This meant that blinking, head turning, looking down, and a few other moods were possible. This made my expressions more accurate and faster since it was a Pi 5.
-
-  I also added a timelapse mode to the camera. I saw something online about using a timelapse to keep yourself accountable while studying, so I added a 30-minute timelapse system that automatically uploaded the video to the saved photo drive, which also incentivized me to take small breaks every 30 minutes (and fix the posture).
+  I also added a timelapse mode to the camera. I saw something online about using a timelapse to keep yourself accountable while studying, so I added a 30-minute timelapse system that automatically uploaded the video to the saved photo drive, which also incentivized me to take small breaks every 30 minutes (and fix my posture).
 
 https://github.com/user-attachments/assets/27eb6a7e-6993-401e-8eb0-af38e977b3c4
 
