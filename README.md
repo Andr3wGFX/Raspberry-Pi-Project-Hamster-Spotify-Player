@@ -7,7 +7,7 @@ This side project currently runs on a Raspberry Pi 5, which connects to my home 
 
 I reconstructed my build process in this read me file using my original notes from my build process. It has everything from what I did, how I was inspired by others, what parts I struggled with, and details of what changes I made as time went on to improve it.
 
-$$\color{firebrick}\text{**Build Log:**}$$
+$$\color{firebrick}\text{**_Build Log:_**}$$
 
 $$\color{cyan}\text{**September 2nd**}$$
 
