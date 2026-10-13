@@ -1,0 +1,7 @@
+This was the reel that originally inspired me to make my Pi 4 into a Spotify Deck. Theirs uses a Pi Zero and an E-ink display, which I swapped for my Pi 4 and a 2-inch LCD. I also added better graphics and put it on my whiteboard instead.
+https://www.instagram.com/p/DayqJaHJwlM/
+
+This was the reel that inspired me to add the hamster filter. Theirs uses MediaPipe's filter and only works on one face and doesn't track the user's face live. This is what I improved on in my design.
+https://www.instagram.com/p/Dc-jnNWNEGr/
+
+I also used some of this creator's hamster photos in my pool of hamster memes, though I ended up not being able to use much of her code since it was built for Mac/Windows, while I needed mine to run on a Pi 5 with more specific hardware.
