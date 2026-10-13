@@ -1,5 +1,10 @@
 # Raspberry-Pi-Project-Hamster-Spotify-Player
+
+<p>$\color{blue}\text{\bf Introduction:}$</p>
+
 This repo has my iterative process for my Raspberry Pi hamster photo booth and Spotify player project and how it progressed over time.
+
+I know this project sounds super random, and it is, which is why the demonstration here might do well to show what I've built :)
 
 This took the better part of a month to make, and was something I did on the side for fun with leftover parts that my Beaver Works Summer Institute instructor gave me (Thanks for the lessons and the Pis :)). I can't count the total amount of hours I'd spent on this, but I'd guess something around 30 total or so, most of which was working on the code.
 
@@ -10,14 +15,33 @@ Here's how it looks, and where it is on my desk:
 
 <img width="1388" height="925" alt="image" src="https://github.com/user-attachments/assets/68f33890-2f24-49d0-9e0f-cab5a8092dd4" />
 
+Through this project, I learned how to use computer vision blendshapes, Google and Spotify APIs, LCD displays, Headless Raspberry Pis, and expanded what I'd already learned about Python and OpenCV.
 
-I reconstructed my build process in this read me file using my original notes from my build process. It has everything from what I did, how I was inspired by others, what parts I struggled with, and details of what changes I made as time went on to improve it.
+A lot of what I'd done here had come from Beaver Works's Autonomous Drone Program: Raspberry Pi setup and wiring, OpenCV, Computer Vision, and SUDO work were all taught to me at Beaver Works. I also really appreciate Beaver Works since it gave taught this in an exceptionally entertaining way-and let us keep parts if they were even the slightest bit broken :) (Thanks for the Raspberry Pi's!)
+
+<p>$\color{purple}\text{\bf Motivation:}$</p>
+
+This project originally started since I'd been frustrated that I had to switch tabs to adjust Spotify when I was working. Alt-tabbing, while a quick motion, felt a clunky to me and took me out of my work. That's why when I saw a reel about using a Raspberry Pi to change music, I decided that I'd go ahead and try it too, that way I could put my Pi 4 from Beaver Works to good use and have something fun to make for a few hours. 
+
+I picked an old webcam for the project because it was an old webcam. It had grain, crappy resolution, and because of that, the images it took had character. Beyond that, it was also an engineering decision: the smaller resolution meant less compute, and the webcam's internals were physically smaller than higher resolution cameras that I could connect to the Pi. Since I'd originally only planned on using a Pi 4 for this project, I preferred the smaller resolution so that my Pi 4 could still run the project smoothly.
+
+I only added the hamster faces later on. My friends always text using the silly hamster memes instead of emojis, and I wanted to make something to surprise them with. Their hamster memes always cracked me up when I saw them over text, and I decided that I'd take this silly thing on my desk and reflect that.
+
+When I showed the live hamster faces to them, they spent several minutes looking stupid by making the same silly faces in succession that I'd made while calibrating the facial expression blend shapes.
+
+<p>$\color{yellow}\text{\bf Future Direction:}$</p>
+
+This project is definitely what I'd classify as a side quest that I return to on weekends when I want a break from endless homework and essays, and in the future I want to expand it by making it more portable and perhaps adding a printer. Bringing it to show my friends took quite up a bit of space in my bag, so I want to create a version separate from my desk whiteboard that I can bring anywhere as a mini-camera that can also print photos on the spot.
+
+I also love how this project has put a smile on others, whether it be friends, family, or even strangers that see it in passing. That's why I've been working on a version that I can release in a public repo and post it for others to build themselves, perhaps also one that can be run on cheaper hardware. So far, I've made a version of this available to my friends to their great amusement, and I hope to expand that. :D
 
 <p>$\color{firebrick}\text{\bf Build Log:}$</p>
 
+I reconstructed my build process in this read me file using my original notes from my build process. It has everything from what I did, how I was inspired by others, what parts I struggled with, and details of what changes I made as time went on to improve it.
+
 <p>$\color{cyan}\text{\bf September 2nd}$</p>
 
-After getting back from Beaver Works, I decided that I'd use the Raspberry Pi 4 that my instructor had given me at the end of my course. I saw a Spotify deck on my Instagram home page and decided that it sounded like a fun thing to try and create using my Pi 4. At first, I didn't use my Pi 5, which was also from my instructor, since I thought that 8GB of RAM and the increased processing power would have been overkill for such a small project. This version connects to Spotify's API and tracks what songs I was listening to, and uses three buttons to let me skip and pause tracks.
+After getting back from Beaver Works, I decided that I'd use the Raspberry Pi 4 that my instructor had given me at the end of my course. I saw a Spotify deck on my Instagram home page and decided that it sounded like a fun thing to try and create using my Pi 4, and something that would help reduce the amount of times I need to alt-tab for Spotify while studying. At first, I didn't use my Pi 5, which was also from my instructor, since I thought that 8GB of RAM and the increased processing power would have been overkill for such a small project. This version connects to Spotify's API and tracks what songs I was listening to, and uses three buttons to let me skip and pause tracks.
 
 <p>$\color{cyan}\text{\bf September 8th}$</p>
 
@@ -57,7 +81,7 @@ Wiring at this stage (Don't mind the mess)
 
 <p>$\color{cyan}\text{\bf September 14th}$</p>
 
-On this day, I decided that a simple camera wasn't enough. I'd seen a video by Catherine (an online creator) that used MediaPipe's expression system to match a hamster meme (pictured below) to a person's face based on their expression. I used her app as a reference for how I could try to do it myself, but ended up not being able to use MediaPipe on my Pi 4 because its processor doesn't have the instruction set that MediaPipe needs to run. So I ended up creating something new that used older OpenCV face detection with three detectable moods using 68 facial tracking points. It wasn't as accurate as her version for the facial expressions, but it did allow me to run it on my existing hardware. I also expanded on what she'd made by making an OpenCV filter find the eyes of the person, measure the distance between them, and then track their face live using the camera and tacking on a hamster sticker, scaled with their eye distance. I also made it work for as many people as could fit in frame by making a system for handling multiple faces, which her version lacked.
+On this day, I decided that a simple camera wasn't enough. My friends always texted using these funny hamster memes (pictured below), and I wanted to make them a surprise. I'd seen a video by Catherine (an online creator) that used MediaPipe's expression system to match a hamster meme to a person's face based on their expression. I used her app as a reference for how I could try to do it myself, but ended up not being able to use MediaPipe on my Pi 4 because its processor doesn't have the instruction set that MediaPipe needs to run. So I ended up creating something new that used older OpenCV face detection with three detectable moods using 68 facial tracking points. It wasn't as accurate as her version for the facial expressions, but it did allow me to run it on my existing hardware. I also expanded on what she'd made by making an OpenCV filter find the eyes of the person, measure the distance between them, and then track their face live using the camera and tacking on a hamster sticker, scaled with their eye distance. I also made it work for as many people as could fit in frame by making a system for handling multiple faces, which her version lacked.
 
 <img width="1000" height="1170" alt="image" src="https://github.com/user-attachments/assets/ea3fbf04-60b6-42f3-87ff-de396c281ce2" />
 
@@ -83,7 +107,7 @@ _Problems and how I fixed them at this stage:_
 
 <p>$\color{cyan}\text{\bf September 16th}$</p>
 
-On this day, I decided that I'd actually take what I'd built to my school so that I could take silly photos with my friends. I connected the Pi to my phone's hotspot so that it could upload and sync to Spotify from anywhere. Now I have a bunch of silly photos with my friends!
+On this day, I decided that I'd actually take what I'd built to my school so that I could take silly photos with my friends. I connected the Pi to my phone's hotspot so that it could upload and sync to Spotify from anywhere. Now I have a bunch of silly photos with my friends! I also have a few amazing memories of watching them look silly while making the same expressions I had made while calibrating the expressions to play with the system.
 
 _Problems and how I fixed them at this stage:_ 
 - When I tried to find the videos I'd taken with my friends, I found that my system had a bug that only showed up in offline use, which is that it didn't upload to my Drive if it was offline after the video compiled. I ended up fixing this by adding an auto-upload function that uploaded every file not already synced to my Drive whenever the Pi reconnects to the internet.
