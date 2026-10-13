@@ -68,7 +68,7 @@ _Problems and how I fixed them at this stage:_
 
 <p>$\color{green}\text{\bfHow the Code Changed}$</p>
 
-The main script that I ran on the Pi, which contained the main functionalities and aggregated all the other tool scripts, was nowplaying.py. This script grew from around 1,200 lines on September 14th when it was on the Pi 4, to 1,400 lines when I upgraded to the Pi 5, and then stayed around that range. Another script, hamster.py, which was the expression detector algorithm, grew from around 300 lines to over 600 when I switched from the HAAR/OpenCV system on the Pi 4 to the MediaPipe system on the Pi 5.
+The main script that I ran on the Pi, which contained the main functionalities and aggregated all the other tool scripts, was nowplaying.py. This script grew from around 1,200 lines on September 14th when it was on the Pi 4, to 1,400 lines when I upgraded to the Pi 5, and then stayed around that range. Another script, hamster.py, which was the expression detector algorithm, grew from around 300 lines to over 600 when I switched from the HAAR/OpenCV system on the Pi 4 to the MediaPipe system on the Pi 5. The actual files are dated and are in the now-playing history file.
 
 <p>$\color{green}\text{/bfAssistive Tools}$</p>
 
