@@ -1,7 +1,17 @@
-This was the reel that originally inspired me to make my Pi 4 into a Spotify Deck. Theirs uses a Pi Zero and an E-ink display, which I swapped for my Pi 4 and a 2-inch LCD. I also added better graphics and put it on my whiteboard instead.
-https://www.instagram.com/p/DayqJaHJwlM/
+# Inspiration
 
-This was the reel that inspired me to add the hamster filter. Theirs uses MediaPipe's filter and only works on one face and doesn't track the user's face live. This is what I improved on in my design.
-https://www.instagram.com/p/Dc-jnNWNEGr/
+This project was inspired by a reel showing a Raspberry Pi-powered Spotify deck using a Pi Zero and an E-ink display. I took the concept and adapted it to my setup: a Raspberry Pi 4 paired with a 2-inch LCD. I also improved the overall look and functionality, making the build feel more polished and more tailored to my own use case.
 
-I also used some of this creator's hamster photos in my pool of hamster memes, though I ended up not being able to use much of her code since it was built for Mac/Windows, while I needed mine to run on a Pi 5 with more specific hardware.
+- Inspiration reel: https://www.instagram.com/p/DayqJaHJwlM/
+
+## Hamster Filter Inspiration
+
+The idea for the hamster filter came from another reel that used MediaPipe-based face tracking. While the concept was cool, it only worked for one face and did not track the user's face live in a fluid way. I built on that idea and improved the filter so it could better respond to live movement and feel more natural in real time.
+
+- Inspiration reel: https://www.instagram.com/p/Dc-jnNWNEGr/
+
+## Hamster Meme Assets
+
+I also pulled some hamster photos from another creator's work to help build my pool of hamster memes. Their code was originally designed for Mac/Windows, while my project needed to run on a Raspberry Pi setup. Because of that, I ended up not being able to reuse much of their code directly and instead adapted the concept to fit the constraints of my build.
+
+These inspirations came together to shape the final design: a compact, playful Spotify player with a live face-tracked hamster aesthetic and a custom meme-driven interface.
