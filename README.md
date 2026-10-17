@@ -79,8 +79,6 @@ The following photo is how it looked after I added these:
 
 <img width="645" height="493" alt="Old casing of webcam that I used the internals of." src="https://github.com/user-attachments/assets/3bb9536e-4538-46e2-9d1a-61be7af530cd" />
 
-Wiring at this stage (Don't mind the mess)
-<img width="1388" height="925" alt="image" src="https://github.com/user-attachments/assets/19fd51f0-f498-4aeb-a1d7-f9ea7f7c61d6" />
 
 
 <p>$\color{cyan}\text{\bf September 14th - 16th}$</p>
@@ -97,6 +95,9 @@ _Problems and how I fixed them at this stage:_
 - The expression detection was often wrong, for example, giving happy faces when I was making a neutral expression. I ended up fixing this by calibrating the system with values from my own face, which I got by making funny faces at the camera for a few minutes.
 
   I also switched to a Pi 5 since I wasn't happy with how the expressions looked on the Pi 4. The swap, including reflash and rewire, took approximately 2  hours. The hamster filter was rewritten on MediaPipe with 478 face points and 52 expression scores! :D This meant that blinking, head turning, looking down, and a few other moods were possible. This made my expressions more accurate and faster since it was a Pi 5.
+
+Wiring at this stage (Don't mind the mess)
+<img width="1388" height="925" alt="image" src="https://github.com/user-attachments/assets/19fd51f0-f498-4aeb-a1d7-f9ea7f7c61d6" />
 
   I also added a timelapse mode to the camera. I saw something online about using a timelapse to keep yourself accountable while studying, so I added a 30-minute timelapse system that automatically uploaded the video to the saved photo drive, which also incentivized me to take small breaks every 30 minutes (and fix my posture).
 
