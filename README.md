@@ -4,7 +4,7 @@
 
   This repo has my iterative process for my Raspberry Pi hamster photo booth and Spotify player project and how it progressed over time.
 
-  I know this project sounds super random, and it is, which is why the demonstration here might do well to show what I've built :)
+  I know this project sounds super random, and it is, which is why the demonstration video attached in the portfolio might do well to show what I've built :)
 
   This took the better part of a month to make, and was something I did on the side for fun with leftover parts that my Beaver Works Summer Institute instructor gave me (Thanks for the lessons and the Pis :)). I can't count the total amount of hours I'd spent on this, but I'd guess something around 30 total or so, most of which was working on the code.
 
