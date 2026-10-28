@@ -1,4 +1,4 @@
-#This was for inspiration (copied from a reel I saw that used a Raspberry Pi Pico for a spotify deck that ran on a cheap display)
+#This was for inspiration (copied from a reel I saw that used a Raspberry Pi Zero for a spotify deck that ran on a cheap display)
 #I never actually ran this on my own device but the API system they had was inspiration for my system
 import time, io, requests
 from PIL import Image, ImageDraw, ImageFont
