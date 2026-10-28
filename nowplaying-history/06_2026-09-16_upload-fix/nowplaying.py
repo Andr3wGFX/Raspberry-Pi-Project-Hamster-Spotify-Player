@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Spotify now-playing display (V3)
-Waveshare 2inch LCD Module (ST7789V, 320x240) on a Raspberry Pi 5 8GB from my Beaver Works instructor.
+Waveshare 2inch LCD Module (ST7789V, 320x240) on a Raspberry Pi 5 16GB from my Beaver Works instructor.
 
 What was added in this iteration of V3: Auto upload when reconnected to internet cause I decided to take this project to school
 and test it out with my friends, though it didn't auto upload photos when I put it back on an internet connection, so I added that feature. 
@@ -788,7 +788,7 @@ def hint_bar(img, text, font=None):
 
 
 def get_filter():
-    """Built lazily -- loading 15 stickers and the landmark model takes a
+    """Built lazily -- loading 16 stickers and the landmark model takes a
     moment, and most sessions never turn the filter on."""
     global _ham
     if _ham is None:
